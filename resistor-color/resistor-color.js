@@ -4,9 +4,7 @@
 //
 
 export const colorCode = (color) => {
-  for(let i = 0; i < COLORS.length; i++) {
-    if(color == COLORS[i]) { return i }
-  }
+  return COLORS.indexOf(color);
 };
 
 export const COLORS = [
