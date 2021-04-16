@@ -3,9 +3,9 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = (colorList) => {
-  let colorOneIndex = colorCode(colorList[0])
-  let colorTwoIndex = colorCode(colorList[1])
+export const decodedValue = ([color1, color2]) => {
+  let colorOneIndex = colorCode(color1)
+  let colorTwoIndex = colorCode(color2)
   
   let result = (colorOneIndex * 10) + colorTwoIndex
 
